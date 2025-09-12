@@ -1,0 +1,11 @@
+- Ghi nội dung cho phần câu lệnh trên terminal: ghi các bước để đẩy code lên GitHub
+git init //khởi tạo repository
+git add <file_name> / git add . //thêm file vào staging
+git commit -m "message" //commit file staging
+git config --global init.defaultBranch main //chuyển nhánh main
+git remote add origin git@github.com:qstunganh/pw-fnb.git //kết nối local repository với remote repository trên GitHub
+git push origin main //push repo
+
+- Ghi nội dung cho phần: cấu hình Git username, email
+git config --global user.name "Tùng Anh"
+git config --global user.email "qstunganh@gmail.com"
