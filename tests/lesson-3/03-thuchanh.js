@@ -15,32 +15,32 @@
 // console.log("Xin cHao");
 
 //fuction:
-function printNum(){
-    for (let i = 1 ; i <= 10; i++){
-    console.log(i);
-}
-}
+// function printNum(){
+//     for (let i = 1 ; i <= 10; i++){
+//     console.log(i);
+// }
+// }
 
-printNum();
-console.log("Xin cHao");
-printNum();
-console.log("Xin cHao");
-printNum();
-console.log("Xin cHao");
+// printNum();
+// console.log("Xin cHao");
+// printNum();
+// console.log("Xin cHao");
+// printNum();
+// console.log("Xin cHao");
 
 
-    for (let i = 1 ; i <= 10; i++){
-    console.log(i);
-    }
-    console.log("Xin cHao");
-     for (let i = 1 ; i <= 10; i++){
-    console.log(i);
-    }
-    console.log("Xin cHao");
-     for (let i = 1 ; i <= 10; i++){
-    console.log(i);
-    }
-    console.log("Xin cHao");
+//     for (let i = 1 ; i <= 10; i++){
+//     console.log(i);
+//     }
+//     console.log("Xin cHao");
+//      for (let i = 1 ; i <= 10; i++){
+//     console.log(i);
+//     }
+//     console.log("Xin cHao");
+//      for (let i = 1 ; i <= 10; i++){
+//     console.log(i);
+//     }
+//     console.log("Xin cHao");
 
 //return values
 
@@ -55,8 +55,8 @@ console.log("Xin cHao");
 
 /*ulti fun*/
 
-// let str = "     HUYỀN GIÀ chuỗi có kí tự trống đầu và cuối     ";
-// console.log(str.trim());
+let str = "     HUYỀN GIÀ chuỗi có kí tự trống đầu và cuối     ";
+console.log(str.trim());
 // console.log(str.toUpperCase());
 // console.log(str.toLowerCase());
 // console.log(str.includes("GIÀ"));
@@ -66,8 +66,8 @@ console.log("Xin cHao");
 // console.log(str.indexOf("GIÀ"));
 
 /*Array utils function*/
-let num = [1,2,3,4,5];
-let newmun = num.map(num => num * 2);
-console.log(`Đây là ${newmun} `);
+// let num = [1,2,3,4,5];
+// let newmun = num.map(num => num * 2);
+// console.log(`Đây là ${newmun} `);
 
 
