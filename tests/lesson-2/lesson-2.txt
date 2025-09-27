@@ -1,5 +1,37 @@
-Giải thích các câu lệnh: 
+1. Giải thích các câu lệnh: 
 git init //khởi tạo repository
 git add <file_name> //thêm <file_name> vào staging
 git add . //thêm tất cả file vào staging
 git commit -m "message" //commit file staging
+
+2.
+a. Tạo 3 file: file1, file2, file3
+- Vùng local: file1, file2, file3
+- Vùng working: rỗng
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+b. Chạy lệnh: git init
+- Vùng working: file1, file2, file3
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+c. Chạy lệnh: git commit -m"init project"
+- Vùng working: file1, file2, file3
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+d. Chạy lệnh: git add file1
+- Vùng working: file2, file3
+- Vùng staging: file1
+- Vùng reposiroty: rỗng
+
+e.  Chạy lệnh: git commit -m"add file1"
+- Vùng working: file2, file3
+- Vùng staging: file1
+- Vùng reposiroty: rỗng
+
+f. Chạy lệnh: git push origin main
+- Vùng working: rỗng
+- Vùng staging: file2, file3
+- Vùng reposiroty: file1
