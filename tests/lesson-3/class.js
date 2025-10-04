@@ -290,3 +290,64 @@ class DataProcessor {
         return result;
     }
 }
+// TEST CODE
+const class10A = new ClassRoom("10A1", "Nguyễn Văn An");
+
+// Thêm học sinh vào lớp
+class10A.addStudent({ id: "SV001", name: "Trần Văn A", age: 16, email: "vana@email.com", grades: { Toán: 9.0, Lý: 8.5, Hóa: 8.0, Văn: 7.5, Anh: 9.5 } });
+class10A.addStudent({ id: "SV002", name: "Lê Thị B", age: 15, email: "thib@email.com", grades: { Toán: 8.0, Lý: 9.0, Hóa: 8.5, Văn: 9.0, Anh: 8.5 } });
+class10A.addStudent({ id: "SV003", name: "Phạm Văn C", age: 16, email: "vanc@email.com", grades: { Toán: 6.5, Lý: 7.0, Hóa: 6.0, Văn: 8.0, Anh: 7.5 } });
+class10A.addStudent({ id: "SV004", name: "Hoàng Thị D", age: 15, email: "thid@email.com", grades: { Toán: 9.5, Lý: 9.0, Hóa: 9.5, Văn: 8.5, Anh: 9.0 } });
+
+// 1. Tìm học sinh theo tên hoặc mã (không phân biệt hoa thường)
+console.log("=== TÌM HỌC SINH ===");
+console.log(class10A.findStudent("văn"));
+
+// 2. Tính điểm trung bình của cả lớp
+console.log("\n=== ĐIỂM TRUNG BÌNH CẢ LỚP ===");
+console.log(class10A.getClassAverage());
+
+// 3. Lấy top học sinh giỏi nhất
+console.log("\n=== TOP 3 HỌC SINH GIỎI NHẤT ===");
+console.log(class10A.getTopStudents(3));
+
+// 4. Thống kê điểm môn học
+console.log("\n=== THỐNG KÊ MÔN TOÁN ===");
+console.log(class10A.getSubjectStatistics("Toán"));
+
+// 5. Tạo báo cáo tổng hợp lớp học
+console.log("\n=== BÁO CÁO TỔNG HỢP ===");
+console.log(class10A.generateReport());
+
+// 6. Export danh sách học sinh
+console.log("\n=== EXPORT SIMPLE ===");
+console.log(class10A.exportStudentList("simple"));
+
+console.log("\n=== EXPORT DETAILED ===");
+console.log(class10A.exportStudentList("detailed"));
+
+console.log("\n=== EXPORT GRADES ===");
+console.log(class10A.exportStudentList("grades"));
+
+// 7. Import điểm từ chuỗi CSV
+console.log("\n=== IMPORT ĐIỂM ===");
+console.log(class10A.importScoresFromString("SV001,Toán,9.5\nSV002,Lý,9.5"));
+
+// 8. Kiểm tra tính hợp lệ của dữ liệu
+console.log("\n=== KIỂM TRA DỮ LIỆU ===");
+console.log(class10A.validateAllData());
+
+// 9. Format dữ liệu học sinh để hiển thị
+console.log("\n=== FORMAT STUDENT DATA ===");
+console.log(DataProcessor.formatStudentData(class10A.students));
+
+// 10. Tính phân bố điểm
+console.log("\n=== PHÂN BỐ ĐIỂM ===");
+console.log(DataProcessor.calculateGradeDistribution(class10A.students));
+
+// 11. Tự động tạo mã học sinh từ tên
+console.log("\n=== TẠO MÃ HỌC SINH TỰ ĐỘNG ===");
+console.log(DataProcessor.generateStudentId("Nguyễn Văn E", ["NVE001", "NVE002"]));
+
+// 12. Parse dữ liệu CSV thành array objects
+console.log("\n=== PARSE CSV ===");
