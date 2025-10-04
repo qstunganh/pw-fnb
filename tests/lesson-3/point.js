@@ -1,4 +1,4 @@
-/*Tạo các hàm sau:*/
+/* Examp2: ARRAY UTILS - Quản lý danh sách điểm số */
 
 function calculateAverage(scores) {
     if (scores.length === 0) return 0;  // Xử lý mảng rỗng
@@ -51,4 +51,4 @@ function sortStudentsByScore(students, scores) {
     // Input: ["An", "Bình", "Chi"], [6, 9, 7]
     // Output: [["Bình", 9], ["Chi", 7], ["An", 6]]
 }
-console.log(sortStudentsByScore(["An", "Bình", "Chi"], [6, 9, 7])); 
+console.log(sortStudentsByScore(["An", "Bình", "Chi"], [6, 9, 7]));

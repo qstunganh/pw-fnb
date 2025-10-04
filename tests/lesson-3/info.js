@@ -1,3 +1,5 @@
+/*Examp1: STRING UTILS - Xử lý thông tin người dùng*/
+
 function formatName(fullName) {
     return fullName
         .trim()                   // "nguyễn văn   an" - loại bỏ space đầu/cuối
